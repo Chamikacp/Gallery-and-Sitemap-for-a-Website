@@ -1,0 +1,37 @@
+a rect {
+  stroke-dasharray: 700;
+  stroke-dashoffset: 700;
+  stroke-linecap: butt;
+  -webkit-transition: all 2s ease-out;
+  -moz-transition: all 2s ease-out;
+  -ms-transition: all 2s ease-out;
+  -o-transition: all 2s ease-out;
+  transition: all 2s ease-out;
+}
+a:hover rect {
+  fill: white;
+  stroke-dashoffset: 0;
+  stroke-dasharray: 700;
+  stroke-width: 10;
+}
+
+text {
+  fill: black;
+  font-size: 24px;
+}
+a:hover text {
+  fill: blue;
+}
+
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+.background {
+  background-image: url("76505.jpg");
+  height: 1020px; 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}

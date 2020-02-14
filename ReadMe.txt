@@ -1,0 +1,3 @@
+This sitemap have navigation links to the appropriate part of the group website,developed in SVG.
+This gallery contains a form, 5 thumbnail images, and 2 pull-down menus (to select the page background colour and the page text colour) and an area to display a larger image and associated description of that image.
+When the user selects a thumbnail image, the corresponding large image and the description of that image should display in the defined location on the form.

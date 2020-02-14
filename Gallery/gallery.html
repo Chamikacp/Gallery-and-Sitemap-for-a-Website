@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html>
+    <head>
+	<title>Gallery</title>
+        <link rel="stylesheet" href="normalize.css">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="gallery.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+	
+<body id="myModal">
+    <header class="main-header clearfix" id="main-header">
+           <div class="top">
+                <img id="logo" src="logo.png">
+                <form class="search">
+                    <input type="text" name="search" placeholder="Search.." id="searchBox"> 
+                </form>
+           </div>
+           <div class="container" id="container">
+                <ul class="main-nav">
+                    <li><a href="index.html" id="home"><i class="fa fa-fw fa-home"></i>Home</a></li>
+                    <li><a href="#about"><i class="fa fa-user" style="padding-right: 7px"></i>About</a></li>
+                    <div class="dropdown">
+                        <button class="dropbtn"><i class="fa fa-edit" id="last" style="padding-right: 7px"></i>Products</button>
+                        <div class="dropdown-content">
+                          <p class="dropDownP">Mobiles</p>
+                          <a href="#">Link 1</a>
+                          <a href="#">Link 2</a>
+                          <a href="#">Link 3</a>
+                        </div>
+                    </div>
+                    <li><a href="#contact"><i class="fa fa-fw fa-envelope" style="padding-right: 7px"></i>Support</a></li>
+                    <li><a href="#"><i class="fa fa-image" style="padding-right: 7px"></i>Images</a></li>
+                    <li><a href="Quiz.html"><i class="fa fa-edit" id="last" style="padding-right: 7px"></i>Quiz</a></li>
+                </ul>
+            </div>
+    </header>
+	
+	<!-- the form to select background-color and font color   -->
+	<div class="form">
+			<form action="gallery.html" method="POST" id="imageViewForm" onchange="myFunction(),changeTextColor()">
+				<div class="left-box">
+				<lable for="background">Choose your background color:</lable>
+				<select id="background">
+					<option value="select option">select option</option>
+					<option value="#f3f3f3">Gold</option>
+					<option value="firebrick">Red</option>
+					<option value="aqua">Aqua</option> 
+					<option value="#A9A9A9">Grey</option>
+					<option value="#4B0082">Indigo</option>
+				</select>
+				</div>
+				<div class="left-box">
+				<lable for="text">Choose your text color:</lable>
+				<br/>
+				<select id ="text">
+					<option value="select option">select option</option>
+					<option value="blue">Blue</option>
+					<option value="gray">Gray</option>
+					<option value="gold">Gold</option> 
+					<option value="red">Red</option> 
+					<option value="#00FFFF">Aqua</option> 
+				</select>
+				</div>
+			</form>
+	</div>
+  
+    <div class="modal-contentC" id="myModal">
+	<!-- To view the image slider -->
+		<div class="gallery_Slider">
+		  <div class="numbertext">1 / 5</div>
+			<div>
+			<div class="gal-left">
+			<img src="AyobookPro.jpg">
+			</div>
+		  <div class="gal-right" id="myModal">
+			<h2>Ayobook Pro</h2>
+			 <p>-2.2 GHz Intel Core i9-8750H Six-Core</p>
+				<p>-8GB DDR4 | 128GB M.2 NVMe SSD + 1TB HDD</p>
+				<p>-15.6" 1920 x 1080 IPS-Level Display</p>
+				<p>-NVIDIA GeForce RTX 2070 Ti (4GB GDDR5)</p>
+				<p>-USB 3.1 Gen 1 | USB 2.0 | HDMI</p>
+				<p>-Wi-Fi 5 (802.11ac) | Bluetooth</p>
+				<p>-Backlit Chiclet Keyboard</p>
+				<p>-Ayo OS Pro edition(64-Bit)</p>
+		  </div>
+		  </div>
+		</div>
+
+		<div class="gallery_Slider">
+		  <div class="numbertext">2 / 5</div>
+		   <div>
+		  <div class="gal-left">
+		   <img src="ShoppingImg.png">
+		  </div>
+		  <div class="gal-right" id="myModal">
+			<h2>Ayo Tab A1</h2>
+			<p>-Dimension: 249.3 x 164.3 x 7.1 mm</p>
+			<p>	-Processor: Smapdragon 835</p>
+			<p>-RAM: 4GB</p>
+			<p>-Storage: 64GB or 256GB</p>
+			<p>-Camera: 13MP, f/1.9</p>
+			<p>-Battery: 7,300mAh</p>
+			<p>-Speakers: Surround sound with Dolby Atmos</p>
+			<p>-OS: Ayo Os Mobile</p>
+		  </div>
+		  </div>
+		</div>
+
+		<div class="gallery_Slider">
+		  <div class="numbertext">3 / 5</div>
+		   <div>
+		  <div class="gal-left">
+		   <img src="SmartWall.png">
+		  </div>
+		  <div class="gal-right" id="myModal">
+			<h2>Smart Picture Wall</h2>
+			<p>-IPS Touch Screen & Larger Viewing Area : 10 inch IPS display with 1024x768 HD touch screen resolution. With light sensor, the screen can adjust the brightness automatically. Not any remote control, just simple click to finish all the operation.</p>
+			<p>-Varies Upload Methods : Sending live photos or video to the frames through the iHoment App, or upload from computer/tablet. And it will also access and pick seeds from your social media like Facebook, Instagram, Google photos, Flickr etc., capture moments and share with family wherever and whenever.</p>
+			<p>-Powered by Ayo OS</p>  
+		  </div>
+		  </div>
+		</div>
+		
+		<div class="gallery_Slider">
+		  <div class="numbertext">4 / 5</div>
+		   <div>
+		  <div class="gal-left">
+		   <img src="AyoMobilePro.jpg">
+		  </div>
+		  <div class="gal-right" id="myModal">
+			<h2>Ayo Plus 1</h2>
+			<p>-Dimension:  157.6 x 74.1 x 7.8 mm (6.20 x 2.92 x 0.31 in)</p>
+			<p>	-Processor: Smapdragon 855</p>
+			<p>-RAM: 12GB</p>
+			<p>-Storage: 512GB or 1TB</p>
+			<p>-Camera: 12 MP, f/1.5-2.4, 26mm (wide), 1/2.55", 1.4µm, Dual Pixel PDAF, OIS 12 MP, f/2.4, 52mm (telephoto), 1/3.6"</p>
+			<p>-Battery: 7,300mAh</p>
+			<p>-Speakers: Surround sound with Dolby Atmos</p>
+			<p>-OS: Ayo Os Mobile</p>
+		  </div>
+		  </div>
+		</div>
+		
+		<div class="gallery_Slider">
+		  <div class="numbertext">5 / 5</div>
+		   <div>
+		  <div class="gal-left">
+		   <img src="AyoMug.jpg">
+		  </div>
+		  <div class="gal-right" id="myModal">
+			<h2>Smart Mug</h2>
+			<p>-Smart Mug keeps your coffee or tea at the perfect temperature from the first sip to the last.</p>
+			<p>-Smart Mug is simple and elegant. No buttons or complicated instructions. Just rotate the dial at the bottom of the mug to adjust your temperature.</p>
+			<p>-Smart Mug is a connected device that can be used on its own or through the app. The app allows you to remotely change your temperature, “name” your mug, create presets, and choose notification preferences.</p>
+			<p>-Battery lasts about 2 hours on full charge</p>
+			<p>-Powered by Ayo OS</p>
+		  </div>
+		  </div>
+    </div>
+    
+	<!-- To go to next or previous image -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+	<!--  -->
+   <div class="thumb-box">
+		<div class="column">
+		  <img class="demo cursor" src="AyobookPro.jpg" style="width:100%;height:200px" onclick="currentSlide(1)" alt="">
+		</div>
+		<div class="column">
+		  <img class="demo cursor" src="ShoppingImg.png" style="width:100%;height:200px" onclick="currentSlide(2)" alt="">
+		</div>
+		<div class="column">
+		  <img class="demo cursor" src="SmartWall.png" style="width:100%;height:200px" onclick="currentSlide(3)" alt="">
+		</div>
+		<div class="column">
+		  <img class="demo cursor" src="AyoMobilePro.jpg" style="width:100%;height:200px" onclick="currentSlide(4)" alt="">
+		</div>
+		<div class="column">
+		  <img class="demo cursor" src="AyoMug.jpg" style="width:100%;height:200px" onclick="currentSlide(5)" alt="">
+		</div>
+	   </div>
+   
+  </div>
+
+            <footer class="footer-distributed">
+                <div class="footer-left">
+                    <p class="footer-links">
+                        <a href="#">Home</a>
+                        ·
+                        <a href="#">Blog</a>
+                        ·
+                        <a href="#">Pricing</a>
+                        ·
+                        <a href="#">About</a>
+                        ·
+                        <a href="#">Faq</a>
+                        ·
+                        <a href="#">Contact</a>
+                    </p>
+                    <p class="footer-company-name">AYO &copy; 2019</p>
+                </div>
+                <div class="footer-center">
+                    <div>
+                        <i class="fa fa-map-marker"></i>
+                        <p><span>old kandy road</span> kiribathgoda, Sri lanka</p>
+                    </div>
+                    <div>
+                        <i class="fa fa-phone"></i>
+                        <p>+94 721974323</p>
+                    </div>
+                    <div>
+                        <i class="fa fa-envelope"></i>
+                        <p><a href="shenalpelpola@gmail.com">shenalpelpola@gmail.com</a></p>
+                    </div>
+                </div>
+                <div class="footer-right">
+                    <p class="footer-company-about">
+                        <span>About the company</span>
+                        Lorem ipsum dolor sit amet, consectateur adispicing elit. Fusce euismod convallis velit, eu auctor lacus vehicula sit amet.
+                    </p>
+                    <div class="footer-icons">
+                        <a href="#"><i class="fa fa-facebook"></i></a>
+                        <a href="#"><i class="fa fa-twitter"></i></a>
+                        <a href="#"><i class="fa fa-linkedin"></i></a>
+                        <a href="#"><i class="fa fa-github"></i></a>
+                   </div>
+                </div>
+            </footer>
+<script src="gallery.js"></script>
+</body>
+</html>
